@@ -2,6 +2,11 @@
 
 A micro library for parsing & passing W3C Trace Contexts.
 
+In scope:
+
+- `traceparent` header
+- `tracestate` header (contributions welcome)
+
 ## Installation
 
 ```clojure
