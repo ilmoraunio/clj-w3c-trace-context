@@ -1,6 +1,6 @@
 # clj-w3c-trace-context
 
-A micro library for parsing & passing W3C Trace Contexts.
+A micro library for parsing & generating W3C Trace Context.
 
 In scope:
 
