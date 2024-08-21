@@ -11,7 +11,7 @@ In scope:
 
 ```clojure
 {:deps {ilmoraunio/clj-w3-trace-context {:git/url "https://github.com/ilmoraunio/clj-w3c-trace-context"
-                                         :sha "d7e2e49f047d00832016868d0eda0913f78556d0"}}}
+                                         :sha "2851b1bf7406ff8f08beb9c886745b0b6d91a83f"}}}
 ```
 
 ## Usage
