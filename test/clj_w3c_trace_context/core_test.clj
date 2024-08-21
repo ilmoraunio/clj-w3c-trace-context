@@ -6,12 +6,12 @@
 (deftest test-parse-traceparent
   (testing "example good traceparent parses correctly"
     (let [trace (parse-traceparent "00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-00")]
-     (is (some? (:span-id trace)))
-     (is (= {:version "00"
-             :trace-id "4bf92f3577b34da6a3ce929d0e0e4736"
-             :parent-id "00f067aa0ba902b7"
-             :trace-flags "00"}
-            (dissoc trace :span-id)))))
+      (is (some? (:span-id trace)))
+      (is (= {:version "00"
+              :trace-id "4bf92f3577b34da6a3ce929d0e0e4736"
+              :parent-id "00f067aa0ba902b7"
+              :trace-flags "00"}
+             (dissoc trace :span-id)))))
   (testing "tolerates nil"
     (is (nil? (parse-traceparent nil))))
   (testing "tolerates invalid traceparent"

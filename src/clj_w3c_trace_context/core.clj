@@ -1,7 +1,6 @@
 (ns clj-w3c-trace-context.core
   (:require [clojure.string :as str])
-  (:import (java.util UUID)
-           (java.util.concurrent ThreadLocalRandom)))
+  (:import (java.util.concurrent ThreadLocalRandom)))
 
 (defn -assert
   [assertion message]
@@ -20,7 +19,7 @@
 
 (defn gen-trace-id
   []
-  (str/replace (str (UUID/randomUUID)) #"-" ""))
+  (str/replace (str (random-uuid)) #"-" ""))
 
 (defn gen-span-id
   []
